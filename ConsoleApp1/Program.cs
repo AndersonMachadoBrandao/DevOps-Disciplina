@@ -4,17 +4,30 @@ class Program
 {
     static void Main()
     {
-        // Solicita dois números ao usuário
         Console.Write("Digite o primeiro número: ");
         int numero1 = Convert.ToInt32(Console.ReadLine());
 
         Console.Write("Digite o segundo número: ");
         int numero2 = Convert.ToInt32(Console.ReadLine());
 
-        // Faz a soma
-        int resultado = numero1 + numero2;
+        // Chama a função de soma
+        int resultadoSoma = Somar(numero1, numero2);
+        Console.WriteLine("A soma é: " + resultadoSoma);
 
-        // Exibe o resultado
-        Console.WriteLine("A soma é: " + resultado);
+        // Chama a função de subtração
+        int resultadoSubtracao = Subtrair(numero1, numero2);
+        Console.WriteLine("A subtração é: " + resultadoSubtracao);
+    }
+
+    // Função que soma dois números
+    static int Somar(int a, int b)
+    {
+        return a + b;
+    }
+
+    // Função que subtrai dois números
+    static int Subtrair(int a, int b)
+    {
+        return a - b;
     }
 }
