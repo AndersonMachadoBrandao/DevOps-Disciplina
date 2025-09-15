@@ -16,16 +16,19 @@ class Program
         Console.Write("Digite o segundo número: ");
         int numero2 = Convert.ToInt32(Console.ReadLine());
 
+        Console.Write("Digite o terceiro número: ");
+        int numero3 = Convert.ToInt32(Console.ReadLine());
+
         int resultado = 0;
 
         if (opcao == 1)
         {
-            resultado = Somar(numero1, numero2);
+            resultado = Somar(numero1, numero2, numero3);
             Console.WriteLine("Resultado da soma: " + resultado);
         }
         else if (opcao == 2)
         {
-            resultado = Subtrair(numero1, numero2);
+            resultado = Subtrair(numero1, numero2, numero3);
             Console.WriteLine("Resultado da subtração: " + resultado);
         }
         else
@@ -34,15 +37,15 @@ class Program
         }
     }
 
-    // Função que soma dois números
-    static int Somar(int a, int b)
+    // Função que soma três números
+    static int Somar(int a, int b, int c)
     {
-        return a + b;
+        return a + b + c;
     }
 
-    // Função que subtrai dois números
-    static int Subtrair(int a, int b)
+    // Função que subtrai três números
+    static int Subtrair(int a, int b, int c)
     {
-        return a - b;
+        return a - b - c;
     }
 }
