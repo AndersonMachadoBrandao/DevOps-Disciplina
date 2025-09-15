@@ -1,0 +1,34 @@
+name: CI - .NET
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Baixa o código do repositório
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # 2. Configura o .NET (ajuste a versão conforme seu projeto)
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      # 3. Restaura dependências
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # 4. Compila o projeto
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
+
+      # 5. Executa os testes (se existir projeto de testes)
+      - name: Run tests
+        run: dotnet test --no-build --verbosity normal
