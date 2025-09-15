@@ -7,6 +7,7 @@ class Program
         Console.WriteLine("Escolha uma operação:");
         Console.WriteLine("1 - Soma");
         Console.WriteLine("2 - Subtração");
+        Console.WriteLine("3 - Multiplicação");
         Console.Write("Opção: ");
         int opcao = Convert.ToInt32(Console.ReadLine());
 
@@ -31,6 +32,11 @@ class Program
             resultado = Subtrair(numero1, numero2, numero3);
             Console.WriteLine("Resultado da subtração: " + resultado);
         }
+        else if (opcao == 3)
+        {
+            resultado = Multiplicar(numero1, numero2, numero3);
+            Console.WriteLine("Resultado da multiplicação: " + resultado);
+        }
         else
         {
             Console.WriteLine("Opção inválida!");
@@ -47,5 +53,11 @@ class Program
     static int Subtrair(int a, int b, int c)
     {
         return a - b - c;
+    }
+
+    // Função que multiplica três números
+    static int Multiplicar(int a, int b, int c)
+    {
+        return a * b * c;
     }
 }
