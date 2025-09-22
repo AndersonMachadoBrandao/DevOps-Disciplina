@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ander\\OneDrive\\Documentos\\GitHub\\DevOps-Disciplina\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\ander\\OneDrive\\Documentos\\GitHub\\DevOps-Disciplina\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ander\\OneDrive\\Documentos\\GitHub\\DevOps-Disciplina\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\ander\\OneDrive\\Documentos\\GitHub\\DevOps-Disciplina\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ander\\OneDrive\\Documentos\\GitHub\\DevOps-Disciplina\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\Users\\ander\\OneDrive\\Documentos\\GitHub\\DevOps-Disciplina\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "c:\\Users\\ander\\OneDrive\\Documentos\\GitHub\\DevOps-Disciplina\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "C:\\Users\\ander\\OneDrive\\Documentos\\GitHub\\DevOps-Disciplina\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ander\\OneDrive\\Documentos\\GitHub\\DevOps-Disciplina\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\ander\\OneDrive\\Documentos\\GitHub\\DevOps-Disciplina\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config",
