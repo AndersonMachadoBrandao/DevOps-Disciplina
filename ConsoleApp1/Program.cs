@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Program
+public class Program
 {
     static void Main()
     {
@@ -44,20 +44,18 @@ class Program
     }
 
     // Função que soma três números
-    static int Somar(int a, int b, int c)
-    {
-        return a + b + c;
-    }
+        public static int Somar(int a, int b, int c)
+        {
+            return a + b + c;
+        }
 
-    // Função que subtrai três números
-    static int Subtrair(int a, int b, int c)
-    {
-        return a - b - c;
-    }
+        public static int Subtrair(int a, int b, int c)
+        {
+            return a - b - c;
+        }
 
-    // Função que multiplica três números
-    static int Multiplicar(int a, int b, int c)
-    {
-        return a * b * c;
-    }
+        public static int Multiplicar(int a, int b, int c)
+        {
+            return a * b * c;
+        }
 }
