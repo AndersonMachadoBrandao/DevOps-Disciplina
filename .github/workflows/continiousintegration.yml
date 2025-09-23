@@ -71,5 +71,20 @@ jobs:
           template: "avatar-with-link"
           include-extras: true
 
+testes:
+  runs-on: ubuntu-latest
+  steps:
+  - uses: actions/checkout@v4
+  - name: Setup dotnet
+    uses: actions/setup-dotnet@v4
+    with:
+      dotnet-version: '8.0.300'
+  - name: Install dependencies
+    run: dotnet restore
+  - name: Build
+    run: dotnet build --no-restore
+  - name: Test with the dotnet CLI
+    run: dotnet test --no-build
+
     
 
